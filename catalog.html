@@ -30,9 +30,11 @@
         <h3>
           Стоимость
         </h3>
-        <ul class="price">
-          <li></li>
-        </ul> 
+        <input type="range" id="price" min="0" max="15000" step="100" value="7500"> 
+        <input type="number" id="min-price" value="0">
+        <label for="min-price">От</label>
+        <input type="number" id="max-price" value="15000">
+        <label for="maax-price">До</label>
         
         <h3>
           Сетка
@@ -163,7 +165,7 @@
     <footer class="main-footer">
         <h2 class="visually-hidden"> Контакты</h2>
       <section class="footer-contacts">
-        <h4>NЁRDS DESIGN STUDIO</h4>
+        <h4>Nёrds design studio</h4>
         <p>
           191186, Санкт-Петербург,
           ул. Б. Конюшенная, д. 19/8
@@ -172,16 +174,36 @@
            тел. +7 (812) 275-75-75
         </p>
         <button type="submit">Напишите нам</button>
-        <img src="/img/map.jpg" alt="Карта проезда"width="1440" height="416">
+        <img src="/img/map.jpg" alt="Карта проезда" width="1440" height="416">
       </section>
-        <ul class="footer-social-btn">
-            <li><a href="vk.ru"></a> Вконтакте</li>
-            <li><a href="facebook.com"></a> Фейсбук</li>
-            <li><a href="instagram.com"></a>Инстаграм</li>
+        <ul class="footer-social">
+            <li class="social-btn"><a href="vk.ru"></a> Вконтакте</li>
+            <li class="social-btn"><a href="facebook.com"></a> Фейсбук</li>
+            <li class="social-btn"><a href="instagram.com"></a>Инстаграм</li>
         </ul>
         <p>Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
-    </footer>
+      </footer>
 
   </body>
+  <section class="popup">
+		<h2>Напишите нам</h2>
+      <!-- Здесь будет форма -->
+			<span class="modal-close">x</span>
+		<ul>
+		<li>
+			<input type="text" id="name" placeholder="Имя Фамилия"> 
+			<label for="name">Ваше имя:</label>
+		</li>
+		<li>
+				<input type="text" id="email" placeholder="email@example.com">
+				<label for="email">Ваш e-mail:</label>
+		</li>	
+		<li>
+			<textarea id="letter-text" rows="5">В свободной форме</textarea>
+			<label for="letter-text">Текст письма:</label>
+		</li>
+		</ul>
+			<button type="submit">Отправить</button>
+	</section>
 </html>
